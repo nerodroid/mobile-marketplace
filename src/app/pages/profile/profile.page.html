@@ -7,4 +7,27 @@
 
 <ion-content>
 
+  <div class="main_content_div">
+   
+    <div >
+      <div 
+        [style.backgroundImage]="'url(' +data.img+ ')'"></div>
+    
+        <ion-label >{{data.firstName}}</ion-label>
+        <ion-label >{{data.lastName}}</ion-label>
+		<ion-label >{{data.phone}}</ion-label>
+		
+		
+		<ion-input id="fstName" [(ngModel)]="fstName" placeholder={{data.firstName}} type="text"></ion-input>
+		<ion-input id="lstName"  [(ngModel)]="lstName" placeholder={{data.lastName}} type="text"></ion-input>
+		<ion-input id="phn"  [(ngModel)]="phn" placeholder={{data.phone}} type="text"></ion-input>
+		
+		<button ion-button round    (click) ="updateData()" >Save</button>
+	
+  
+    </div>
+
+	
+  </div>
+  
 </ion-content>

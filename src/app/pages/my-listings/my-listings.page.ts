@@ -18,7 +18,7 @@ export class MyListingsPage implements OnInit {
       this.authSvc.getUser().subscribe(user => {
         this.user = user; 
         this.dataSvc.getListings(this.user.uid).subscribe(result=>{
-          console.log(result)
+          console.log(result);
           this.data = result;
         })
       

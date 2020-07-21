@@ -225,7 +225,7 @@ export class MyListingsAddPage implements OnInit {
         this.util.toast('Listing has been successfully added!', 'success', 'bottom');
       })
       .catch(err => {
-        //console.log(err);
+        console.log(err);
         this.util.errorToast('Error in adding listing. Please try again!');
       })
     
